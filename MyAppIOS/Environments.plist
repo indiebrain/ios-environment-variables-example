@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Release</key>
+	<dict>
+		<key>MyAppAPIBaseUrl</key>
+		<string>http://www.myapp.com</string>
+	</dict>
+	<key>Debug</key>
+	<dict>
+		<key>MyAppAPIBaseUrl</key>
+		<string>http://development.myapp.com</string>
+	</dict>
+</dict>
+</plist>

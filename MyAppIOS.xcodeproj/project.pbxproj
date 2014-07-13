@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87771B4D19730F010041C3C8 /* EnvironmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87771B4C19730F010041C3C8 /* EnvironmentTests.m */; };
 		87E1295D1972F97F0058A943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E1295C1972F97F0058A943 /* Foundation.framework */; };
 		87E1295F1972F97F0058A943 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E1295E1972F97F0058A943 /* CoreGraphics.framework */; };
 		87E129611972F97F0058A943 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E129601972F97F0058A943 /* UIKit.framework */; };
@@ -18,7 +19,8 @@
 		87E129771972F9800058A943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E1295C1972F97F0058A943 /* Foundation.framework */; };
 		87E129781972F9800058A943 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E129601972F97F0058A943 /* UIKit.framework */; };
 		87E129801972F9800058A943 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87E1297E1972F9800058A943 /* InfoPlist.strings */; };
-		87E129821972F9800058A943 /* MyAppIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E129811972F9800058A943 /* MyAppIOSTests.m */; };
+		87E1298D1972F9CF0058A943 /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E1298C1972F9CF0058A943 /* Environment.m */; };
+		87E1298F1972FA890058A943 /* Environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87E1298E1972FA890058A943 /* Environments.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87771B4C19730F010041C3C8 /* EnvironmentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvironmentTests.m; sourceTree = "<group>"; };
 		87E129591972F97F0058A943 /* MyAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E1295C1972F97F0058A943 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		87E1295E1972F97F0058A943 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +50,9 @@
 		87E129751972F9800058A943 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		87E1297D1972F9800058A943 /* MyAppIOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyAppIOSTests-Info.plist"; sourceTree = "<group>"; };
 		87E1297F1972F9800058A943 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		87E129811972F9800058A943 /* MyAppIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAppIOSTests.m; sourceTree = "<group>"; };
+		87E1298B1972F9CF0058A943 /* Environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
+		87E1298C1972F9CF0058A943 /* Environment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Environment.m; sourceTree = "<group>"; };
+		87E1298E1972FA890058A943 /* Environments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Environments.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,8 @@
 				87E1296C1972F97F0058A943 /* MAIOSAppDelegate.m */,
 				87E1296E1972F97F0058A943 /* Images.xcassets */,
 				87E129631972F97F0058A943 /* Supporting Files */,
+				87E1298B1972F9CF0058A943 /* Environment.h */,
+				87E1298C1972F9CF0058A943 /* Environment.m */,
 			);
 			path = MyAppIOS;
 			sourceTree = "<group>";
@@ -122,6 +129,7 @@
 				87E129651972F97F0058A943 /* InfoPlist.strings */,
 				87E129681972F97F0058A943 /* main.m */,
 				87E1296A1972F97F0058A943 /* MyAppIOS-Prefix.pch */,
+				87E1298E1972FA890058A943 /* Environments.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,8 +137,8 @@
 		87E1297B1972F9800058A943 /* MyAppIOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				87E129811972F9800058A943 /* MyAppIOSTests.m */,
 				87E1297C1972F9800058A943 /* Supporting Files */,
+				87771B4C19730F010041C3C8 /* EnvironmentTests.m */,
 			);
 			path = MyAppIOSTests;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 			files = (
 				87E129671972F97F0058A943 /* InfoPlist.strings in Resources */,
 				87E1296F1972F97F0058A943 /* Images.xcassets in Resources */,
+				87E1298F1972FA890058A943 /* Environments.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E1296D1972F97F0058A943 /* MAIOSAppDelegate.m in Sources */,
+				87E1298D1972F9CF0058A943 /* Environment.m in Sources */,
 				87E129691972F97F0058A943 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87E129821972F9800058A943 /* MyAppIOSTests.m in Sources */,
+				87771B4D19730F010041C3C8 /* EnvironmentTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +448,7 @@
 				87E129871972F9800058A943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87E129881972F9800058A943 /* Build configuration list for PBXNativeTarget "MyAppIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +457,7 @@
 				87E1298A1972F9800058A943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

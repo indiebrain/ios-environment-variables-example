@@ -1,17 +1,12 @@
-//
-//  MAIOSAppDelegate.m
-//  MyAppIOS
-//
-//  Created by Aaron Kuehler on 7/13/14.
-//  Copyright (c) 2014 Aaron Kuehler. All rights reserved.
-//
-
 #import "MAIOSAppDelegate.h"
+#import "Environment.h"
 
 @implementation MAIOSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSLog(@"Using %@ as the API Base URL", [[Environment sharedInstance] fetch:@"MyAppAPIBaseUrl"]);
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
